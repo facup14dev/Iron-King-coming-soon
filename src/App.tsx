@@ -5,59 +5,59 @@ const TICKER_ITEMS = [
   'ACCESORIOS', 'ACERO PREMIUM', 'ASADORES', 'ARTESANAL',
 ]
 
-const FEATURES = [
-  {
-    icon: (
-      <svg viewBox="0 0 48 48" fill="none" className="w-10 h-10" aria-hidden="true">
-        <path d="M24 8C24 8 14 18 14 26a10 10 0 0020 0c0-8-10-18-10-18z" stroke="#E85D04" strokeWidth="2.5" strokeLinejoin="round"/>
-        <path d="M24 28c0-4-4-8-4-8" stroke="#E85D04" strokeWidth="2" strokeLinecap="round"/>
-        <path d="M10 40h28" stroke="#F5EFE0" strokeWidth="2.5" strokeLinecap="round"/>
-        <path d="M16 40v4M32 40v4" stroke="#F5EFE0" strokeWidth="2" strokeLinecap="round"/>
-      </svg>
-    ),
-    label: 'FIRE PITS',
-    desc: 'Handcrafted pits built for long burns and lasting warmth.',
-  },
-  {
-    icon: (
-      <svg viewBox="0 0 48 48" fill="none" className="w-10 h-10" aria-hidden="true">
-        <rect x="8" y="18" width="32" height="4" rx="2" stroke="#E85D04" strokeWidth="2.5"/>
-        <path d="M12 22v10a2 2 0 002 2h20a2 2 0 002-2V22" stroke="#E85D04" strokeWidth="2.5"/>
-        <line x1="24" y1="18" x2="24" y2="6" stroke="#F5EFE0" strokeWidth="2" strokeLinecap="round"/>
-        <path d="M24 6c0 0-3-4 0-6 3 2 0 6 0 6z" fill="#E85D04"/>
-        <line x1="16" y1="34" x2="16" y2="42" stroke="#F5EFE0" strokeWidth="2" strokeLinecap="round"/>
-        <line x1="32" y1="34" x2="32" y2="42" stroke="#F5EFE0" strokeWidth="2" strokeLinecap="round"/>
-      </svg>
-    ),
-    label: 'PREMIUM GRILLS',
-    desc: 'Heavy-gauge steel grills engineered for restaurant-grade performance.',
-  },
-  {
-    icon: (
-      <svg viewBox="0 0 48 48" fill="none" className="w-10 h-10" aria-hidden="true">
-        <rect x="6" y="20" width="36" height="20" rx="3" stroke="#E85D04" strokeWidth="2.5"/>
-        <path d="M14 20V16a10 10 0 0120 0v4" stroke="#E85D04" strokeWidth="2.5"/>
-        <circle cx="24" cy="30" r="4" stroke="#F5EFE0" strokeWidth="2"/>
-        <path d="M24 26v-4M24 38v-4M18.5 30H14M34 30h-4.5" stroke="#F5EFE0" strokeWidth="1.5" strokeLinecap="round"/>
-      </svg>
-    ),
-    label: 'SMOKERS',
-    desc: 'Offset and drum smokers for low-and-slow mastery.',
-  },
-  {
-    icon: (
-      <svg viewBox="0 0 48 48" fill="none" className="w-10 h-10" aria-hidden="true">
-        <path d="M10 24h28" stroke="#E85D04" strokeWidth="2.5" strokeLinecap="round"/>
-        <path d="M10 30h28" stroke="#E85D04" strokeWidth="2" strokeLinecap="round" strokeDasharray="4 3"/>
-        <path d="M10 36h28" stroke="#E85D04" strokeWidth="2" strokeLinecap="round" strokeDasharray="2 4"/>
-        <rect x="6" y="18" width="36" height="24" rx="2" stroke="#F5EFE0" strokeWidth="2"/>
-        <path d="M14 18V12M24 18V10M34 18V13" stroke="#F5EFE0" strokeWidth="2" strokeLinecap="round"/>
-      </svg>
-    ),
-    label: 'BBQ ACCESSORIES',
-    desc: 'Every tool, cover, and condiment for the complete cook setup.',
-  },
-]
+// const FEATURES = [
+//   {
+//     icon: (
+//       <svg viewBox="0 0 48 48" fill="none" className="w-10 h-10" aria-hidden="true">
+//         <path d="M24 8C24 8 14 18 14 26a10 10 0 0020 0c0-8-10-18-10-18z" stroke="#E85D04" strokeWidth="2.5" strokeLinejoin="round"/>
+//         <path d="M24 28c0-4-4-8-4-8" stroke="#E85D04" strokeWidth="2" strokeLinecap="round"/>
+//         <path d="M10 40h28" stroke="#F5EFE0" strokeWidth="2.5" strokeLinecap="round"/>
+//         <path d="M16 40v4M32 40v4" stroke="#F5EFE0" strokeWidth="2" strokeLinecap="round"/>
+//       </svg>
+//     ),
+//     label: 'FIRE PITS',
+//     desc: 'Handcrafted pits built for long burns and lasting warmth.',
+//   },
+//   {
+//     icon: (
+//       <svg viewBox="0 0 48 48" fill="none" className="w-10 h-10" aria-hidden="true">
+//         <rect x="8" y="18" width="32" height="4" rx="2" stroke="#E85D04" strokeWidth="2.5"/>
+//         <path d="M12 22v10a2 2 0 002 2h20a2 2 0 002-2V22" stroke="#E85D04" strokeWidth="2.5"/>
+//         <line x1="24" y1="18" x2="24" y2="6" stroke="#F5EFE0" strokeWidth="2" strokeLinecap="round"/>
+//         <path d="M24 6c0 0-3-4 0-6 3 2 0 6 0 6z" fill="#E85D04"/>
+//         <line x1="16" y1="34" x2="16" y2="42" stroke="#F5EFE0" strokeWidth="2" strokeLinecap="round"/>
+//         <line x1="32" y1="34" x2="32" y2="42" stroke="#F5EFE0" strokeWidth="2" strokeLinecap="round"/>
+//       </svg>
+//     ),
+//     label: 'PREMIUM GRILLS',
+//     desc: 'Heavy-gauge steel grills engineered for restaurant-grade performance.',
+//   },
+//   {
+//     icon: (
+//       <svg viewBox="0 0 48 48" fill="none" className="w-10 h-10" aria-hidden="true">
+//         <rect x="6" y="20" width="36" height="20" rx="3" stroke="#E85D04" strokeWidth="2.5"/>
+//         <path d="M14 20V16a10 10 0 0120 0v4" stroke="#E85D04" strokeWidth="2.5"/>
+//         <circle cx="24" cy="30" r="4" stroke="#F5EFE0" strokeWidth="2"/>
+//         <path d="M24 26v-4M24 38v-4M18.5 30H14M34 30h-4.5" stroke="#F5EFE0" strokeWidth="1.5" strokeLinecap="round"/>
+//       </svg>
+//     ),
+//     label: 'SMOKERS',
+//     desc: 'Offset and drum smokers for low-and-slow mastery.',
+//   },
+//   {
+//     icon: (
+//       <svg viewBox="0 0 48 48" fill="none" className="w-10 h-10" aria-hidden="true">
+//         <path d="M10 24h28" stroke="#E85D04" strokeWidth="2.5" strokeLinecap="round"/>
+//         <path d="M10 30h28" stroke="#E85D04" strokeWidth="2" strokeLinecap="round" strokeDasharray="4 3"/>
+//         <path d="M10 36h28" stroke="#E85D04" strokeWidth="2" strokeLinecap="round" strokeDasharray="2 4"/>
+//         <rect x="6" y="18" width="36" height="24" rx="2" stroke="#F5EFE0" strokeWidth="2"/>
+//         <path d="M14 18V12M24 18V10M34 18V13" stroke="#F5EFE0" strokeWidth="2" strokeLinecap="round"/>
+//       </svg>
+//     ),
+//     label: 'BBQ ACCESSORIES',
+//     desc: 'Every tool, cover, and condiment for the complete cook setup.',
+//   },
+// ]
 
 interface Ember {
   id: number
